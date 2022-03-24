@@ -1,6 +1,6 @@
 {
-  "name": "infoviz-3",
-  "source": ["src/index.html"],
+  "name": "map-scroll",
+  "source": ["src\index.ejs"],
   "targets": {
     "default": {
       "distDir": "./docs",

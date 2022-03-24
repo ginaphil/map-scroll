@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script type="module" src="script/app.js"></script>
+  <title>My First Web App</title>
+</head>
+
+<body>
+  <main>
+    <article>
+     
+      
+ <!-- scrolly -->
+ <section id="doge-scrolly">
+
+  <!-- define the scroll sections -->
+  <% const blocks=
+    [
+      { 
+        "filename" : "doge_1" , 
+        "anno" : "The dogefather" 
+      }, 
+      { 
+        "filename" : "doge_2" , 
+        "anno": "Such doge Much wow" 
+      }
+    ] 
+  %>
+
+  <!-- include the component -->
+  <%- include('./scrolly/scrolly.ejs', {id: "doge-scrolly" , blocks: blocks }); %>
+</section>
+    </article>
+  </main>
+</body>
+
+
+</html>
