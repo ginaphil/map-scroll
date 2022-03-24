@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script type="module" src="script/app.js"></script>
-  <title>My First Web App</title>
+  <title>Schematic Cartography</title>
 </head>
 
 <body>
@@ -15,24 +15,24 @@
      
       
  <!-- scrolly -->
- <section id="doge-scrolly">
+ <section id="map-scrolly">
 
   <!-- define the scroll sections -->
   <% const blocks=
     [
       { 
-        "filename" : "doge_1" , 
-        "anno" : "The dogefather" 
+        "filename" : "map_early" , 
+        "anno" : "tracing the maps" 
       }, 
       { 
-        "filename" : "doge_2" , 
-        "anno": "Such doge Much wow" 
+        "filename" : "map_final" , 
+        "anno": "readers club @ kottayam" 
       }
     ] 
   %>
 
   <!-- include the component -->
-  <%- include('./scrolly/scrolly.ejs', {id: "doge-scrolly" , blocks: blocks }); %>
+  <%- include('./scrolly/scrolly.ejs', {id: "map-scrolly" , blocks: blocks }); %>
 </section>
     </article>
   </main>
